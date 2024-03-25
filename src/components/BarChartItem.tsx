@@ -18,7 +18,7 @@ function BarChartItem({
     height
 }: {
     day: string,
-    height: number
+    height: string
 }) {
     const [isMouseOver, setIsMouseOver] = React.useState(false)
     const currentDay = new Date().toDateString().split(' ')[0].toLowerCase()
@@ -36,7 +36,7 @@ function BarChartItem({
                 <HoverElem price="$31.01" />
             ) : ''}
 
-            <div className={`w-10 h-${height} ${isCurrentDay ? 'bg-cyan' : 'bg-soft-red'} rounded-sm`}></div>
+            <div className={`w-10 ${height} ${isCurrentDay ? 'bg-cyan' : 'bg-soft-red'} rounded-sm`}></div>
             <span className='block mt-2 text-medium-brown'>{day}</span>
         </div>
     )

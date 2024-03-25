@@ -36,7 +36,7 @@ function BarChartItem({
                 <HoverElem price="$31.01" />
             ) : ''}
 
-            <div className={`w-10 ${height} ${isCurrentDay ? 'bg-cyan' : 'bg-soft-red'} rounded-sm`}></div>
+            <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-cyan' : 'bg-soft-red'} rounded-sm`}></div>
             <span className='block mt-2 text-medium-brown'>{day}</span>
         </div>
     )

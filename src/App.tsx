@@ -1,7 +1,9 @@
+import BartChartContainer from "./components/BartChartContainer"
+
 function App() {
   return (
-    <div>
-      <h1>Expenses Chart Bar</h1>
+    <div className='bg-cream h-screen' role='main'>
+      <BartChartContainer />
     </div>
   )
 }

@@ -22,7 +22,9 @@ function BarChartItem({
 }) {
     const [isMouseOver, setIsMouseOver] = React.useState(false)
     const currentDay = new Date().toDateString().split(' ')[0].toLowerCase()
+
     const isCurrentDay = currentDay === day
+    const isDesktop = !isMobile && isMouseOver
 
     return (
         <div
@@ -30,9 +32,9 @@ function BarChartItem({
             onMouseEnter={() => setIsMouseOver(true)}
             onMouseLeave={() => setIsMouseOver(false)}
         >
-            {!isMobile && isMouseOver && day === 'wed' ? (
+            {isDesktop && day === 'wed' ? (
                 <HoverElem price="$52.36" />
-            ) : !isMobile && isMouseOver && day === 'thu' ? (
+            ) : isDesktop && day === 'thu' ? (
                 <HoverElem price="$31.01" />
             ) : ''}
 

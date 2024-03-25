@@ -3,7 +3,7 @@ import BarChartItemsList from './BarChartItemsList'
 
 function BartChartContainer() {
     return (
-        <div className="max-w-md mx-auto p-5">
+        <div className="md:max-w-lg max-w-md mx-auto p-5">
             <BarChartHeader />
 
             <div className="bg-white p-5 mt-4 rounded-lg">

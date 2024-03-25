@@ -7,7 +7,7 @@ const HoverElem = ({
     price: string
 }) => {
     return (
-        <div className="absolute bg-dark-brown rounded-sm text-center p-1 -mt-9 mb-1 -mx-1.5">
+        <div className="absolute bg-neutral-dark-brown rounded-sm text-center p-1 -mt-9 mb-1 -mx-2">
             <span className="text-white">{price}</span>
         </div>
     )
@@ -36,8 +36,8 @@ function BarChartItem({
                 <HoverElem price="$31.01" />
             ) : ''}
 
-            <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-cyan' : 'bg-soft-red'} rounded-sm`}></div>
-            <span className='block mt-2 text-medium-brown'>{day}</span>
+            <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-primary-cyan' : 'bg-primary-soft-red'} rounded-sm`}></div>
+            <span className='inline-block mt-2 text-neutral-medium-brown'>{day}</span>
         </div>
     )
 }

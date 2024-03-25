@@ -1,4 +1,4 @@
-import BartChartContainer from "./components/BartChartContainer"
+import BartChartContainer from "./components/BarChartContainer"
 
 function App() {
   return (

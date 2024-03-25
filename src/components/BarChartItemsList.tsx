@@ -1,6 +1,6 @@
-import BarItem from "./BarItem"
+import BarChartItem from "./BarChartItem"
 
-function BarItems() {
+function BarChartItemsList() {
     const bars = [
         ['mon', 12],
         ['tue', 24],
@@ -12,12 +12,12 @@ function BarItems() {
     ]
 
     return (
-        <div className="mt-12 flex items-end gap-3">
+        <div className="mt-14 flex justify-between items-end gap-3">
             {bars.map((bar, i) => {
                 const [day, height] = bar as [string, number]
-                
+        
                 return (
-                    <BarItem
+                    <BarChartItem
                         day={day}
                         height={height}
                         key={i}
@@ -28,4 +28,4 @@ function BarItems() {
     )
 }
 
-export default BarItems
+export default BarChartItemsList

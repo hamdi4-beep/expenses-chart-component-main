@@ -1,14 +1,14 @@
 import * as React from 'react'
 import {isMobile} from 'react-device-detect'
 
-const HoverElem = ({
-    price
+const AmountTag = ({
+    amount
 }: {
-    price: string
+    amount: string
 }) => {
     return (
         <div className="absolute bg-neutral-dark-brown rounded-sm text-center p-1 -mt-9 mb-1 -mx-2">
-            <span className="text-white">{price}</span>
+            <span className="text-white">{amount}</span>
         </div>
     )
 }
@@ -33,9 +33,9 @@ function BarChartItem({
             onMouseLeave={() => setIsMouseOver(false)}
         >
             {isDesktop && day === 'wed' ? (
-                <HoverElem price="$52.36" />
+                <AmountTag amount="$52.36" />
             ) : isDesktop && day === 'thu' ? (
-                <HoverElem price="$31.01" />
+                <AmountTag amount="$31.01" />
             ) : ''}
 
             <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-primary-cyan' : 'bg-primary-soft-red'} rounded-sm`}></div>

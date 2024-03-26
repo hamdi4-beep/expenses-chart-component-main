@@ -8,7 +8,7 @@ function BarChartHeader() {
                 <span className='font-bold text-2xl'>$921.48</span>
             </div>
 
-            <img src={logoSrc} alt="logo image" />
+            <img src={logoSrc} alt="logo image of two circles intertwined" />
         </div>
     )
 }

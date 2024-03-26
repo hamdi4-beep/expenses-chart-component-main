@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['DM Sans']
+      },
       colors: {
         primary: {
           'soft-red': 'hsl(10, 79%, 65%)',

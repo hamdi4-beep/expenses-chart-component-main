@@ -6,7 +6,7 @@ function BartChartContainer() {
         <div className="md:max-w-lg max-w-md mx-auto p-5">
             <BarChartHeader />
 
-            <div className="bg-white md:p-8 p-5 mt-4 rounded-lg">
+            <div className="bg-white md:py-8 p-5 mt-4 rounded-lg">
                 <span className="text-dark-brown font-bold md:text-3xl text-xl">Spending - Last 7 Days</span>
                 <BarChartItemsList />
                 <div className='border-t border-grey my-6'></div>

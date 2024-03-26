@@ -2,7 +2,7 @@ import BartChartContainer from "./components/BarChartContainer"
 
 function App() {
   return (
-    <div className='font-sans bg-neutral-cream h-screen md:grid md:content-center' role='main'>
+    <div className='font-sans bg-neutral-cream h-screen' role='main'>
       <BartChartContainer />
 
       <div className="text-center mx-2">

@@ -7,7 +7,7 @@ const AmountTag = ({
     amount: string
 }) => {
     return (
-        <div className="absolute bg-neutral-dark-brown rounded-sm text-center p-1 -mt-9 mb-1 -mx-2">
+        <div className="absolute bg-neutral-dark-brown rounded-sm text-center p-1 -mt-9 mb-1 -mx-1">
             <span className="text-white">{amount}</span>
         </div>
     )
@@ -38,7 +38,7 @@ function BarChartItem({
                 <AmountTag amount="$31.01" />
             ) : ''}
 
-            <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-primary-cyan' : 'bg-primary-soft-red'} rounded-sm`}></div>
+            <div className={`md:w-10 w-8 ${height} ${isCurrentDay ? 'bg-primary-cyan' : 'bg-primary-soft-red'} rounded-md`}></div>
             <span className='inline-block mt-2 text-neutral-medium-brown'>{day}</span>
         </div>
     )

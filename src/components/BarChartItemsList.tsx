@@ -12,7 +12,7 @@ function BarChartItemsList() {
     ]
 
     return (
-        <div className="mt-14 flex justify-between items-end gap-3">
+        <div className="mt-14 flex justify-between items-end">
             {bars.map((bar, i) => {
                 const [day, height] = bar
 

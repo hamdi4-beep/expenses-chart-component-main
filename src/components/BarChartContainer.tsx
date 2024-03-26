@@ -7,7 +7,7 @@ function BartChartContainer() {
             <BarChartHeader />
 
             <div className="bg-white md:p-8 p-5 mt-4 rounded-lg">
-                <span className="text-dark-brown font-bold text-2xl">Spending - Last 7 Days</span>
+                <span className="text-dark-brown font-bold md:text-3xl text-xl">Spending - Last 7 Days</span>
                 <BarChartItemsList />
                 <div className='border-t border-grey my-6'></div>
 

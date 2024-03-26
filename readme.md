@@ -25,24 +25,16 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: (https://www.frontendmentor.io/solutions/expenses-chart-component-using-react-ts-tailwind-css-Wgxsel8B7h)
 - Live Site URL: (https://hamdi4-beep.github.io/expenses-chart-component-main/)
 
 ## My process
+
+As I started the project, I made a list of components that make up the app. This helped me focus on which component is going to have the responsibility. I picked easier to recognize names for the components.
+
+With Tailwind CSS, I added the styles starting from the top and working my way down. I focused on getting the project up and running as soon as possible, so I can adjust the small details later on. Plus, I'll have something presentable and a visible progress.
 
 ### Built with
 

@@ -30,7 +30,7 @@ function BarChartItem({
 
     return (
         <div
-            className="cursor-pointer"
+            className="text-center cursor-pointer"
             onMouseEnter={() => setIsMouseOver(true)}
             onMouseLeave={() => setIsMouseOver(false)}
         >

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {isMobile} from 'react-device-detect'
+import { BarData } from './BarChartItemsList'
 
 const AmountTag = ({
     amount
@@ -17,11 +18,7 @@ function BarChartItem({
     day,
     height,
     amount
-}: {
-    day: string,
-    height: string,
-    amount: number
-}) {
+}: BarData) {
     const [isMouseOver, setIsMouseOver] = React.useState(false)
     const currentDay = new Date().toDateString().split(' ')[0].toLowerCase()
 

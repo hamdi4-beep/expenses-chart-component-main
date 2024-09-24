@@ -1,24 +1,26 @@
 import BarChartItem from "./BarChartItem"
 import data from '../data.json'
 
+export type BarData = {
+    day: string,
+    amount: number,
+    height: string
+}
+
 function BarChartItemsList() {
+    const heights = ['h-12', 'h-24', 'h-36', 'h-24', 'h-16', 'h-32', 'h-20']
+
     const bars = data.reduce((p, a, i) => {
         return [
             ...p, {
             ...a,
-            height: ['h-12', 'h-24', 'h-36', 'h-24', 'h-16', 'h-32', 'h-20'][i]
+            height: heights[i]
         }]
     }, [] as any[])
 
-    console.log(bars)
-
     return (
         <div className="mt-14 flex justify-between items-end">
-            {bars.map((bar: {
-                day: string,
-                amount: number,
-                height: string
-            }, i) => {
+            {bars.map((bar: BarData, i) => {
                 return (
                     <BarChartItem
                         day={bar.day}
